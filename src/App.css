@@ -1,29 +1,45 @@
 .App {
-  text-align: center;background-color: #597cfe;
+background-color: #597cfe;
+}
+.sidebar{
+  height:100%;width:7%;position: fixed;
+  background-color: white;z-index:1;
+  display: flex;flex-flow: column;
+  justify-content: space-around;flex-wrap: wrap;
+  top:0;left:0;
 }
 
-.App-logo {
-  height:350px;
-  display: grid;
-	place-items: center;
-
-	 background-color: #ffde59;border-radius: 100%;
+.my-logo{position: relative;top:10px;
+  max-width:90px;width:100%;
 }
-.white{
-  height: 450px;
+.my-logo:hover{border:8px solid #ffde59; }
+
+.icons{
+  width:100%;max-width:70px;
+
 }
+.icons:hover{border:8px solid #ffde59;background-color: white;}
+
+.home{margin-top: 100px;margin-left: 150px;
+  display:flex;flex-flow: row;
+    justify-content: space-around;align-items: center;
+    flex-wrap: wrap;
 
 
+}
+.my-photo{height:400px;
+	 background-color: #ffde59;
+   border-radius:70% 10%;transition:border-radius 0.8s;
+}
+.my-photo:hover{border-radius:5% 70%;
 
-.App-header {
-
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;flex-wrap: wrap;
-  align-items: center;
-  justify-content:space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.name{text-shadow: 2px 2px 5px black;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 100px;color: white;
+}
+.role{
+  font-size: 40px;
 }
 
 .App-link {
